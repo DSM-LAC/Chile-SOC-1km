@@ -1,23 +1,14 @@
+
 #paso 1, librerias requeridas
 
 library(rgdal )
 library(raster)
 library(GSIF)
-library(maps)
-library(sp)
-library(rgeos)
 library(caret)
 library(doMC)
 library(doParallel)
 library(reshape)
-library(Metrics)
 library(snowfall)
-library(automap)
-library(ranger)
-library('sp')
-library('gstat')
-library('parallel')
-library(quantregForest)
 
 #directorio de trabajo
 
@@ -75,6 +66,7 @@ sfStop()
 matriz <- cbind(d, e)
 
 #guarda resultados
-saveRDS(matriz, file='Chile-regMat-1km-wg-topo_FINAL.rds')
+write.csv(matriz, file='Chile-regMat-1km-wg-topo_FINAL.csv')
 
 #END
+
