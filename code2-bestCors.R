@@ -45,5 +45,6 @@ training1 <- data.frame(SOC = d$OCSKGM, d[sel])
 #save new results
 write.csv(training1, file= 'trainingDATA-50covs-FINAL.csv')
 ###
+
 #END
 
